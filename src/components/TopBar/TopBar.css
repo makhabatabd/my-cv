@@ -1,0 +1,138 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 10%;
+  min-height: fit-content;
+  background-color: rgb(12, 12, 91);
+}
+
+.profile-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.profile-details {
+  padding-right: 100px;
+}
+
+.profile-details-name {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.profile-details-role {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details-role h1 {
+  margin: 0;
+  font-size: 40px;
+  font-style: italic;
+}
+
+.primary-text {
+  color: white;
+  margin-top: 30px;
+}
+
+.highlighted-text {
+  color: darkorange;
+}
+
+.colz .colz-icons i {
+  color: white;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.colz .colz-icons i:hover {
+  transform: scale(1.5);
+}
+
+.profile-role-tagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px white;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0 0 100px;
+}
+
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../Media/main-pic.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+.download {
+  color: white;
+  background-color: #ff5823;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.download:hover {
+  color: white;
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 910px) {
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+
+  .profile-options {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-parent {
+    display: block;
+  }
+  .profile-details {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile-details-role h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile-picture {
+    display: none;
+  }
+}
